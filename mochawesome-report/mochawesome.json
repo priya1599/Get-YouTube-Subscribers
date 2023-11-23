@@ -1,0 +1,235 @@
+{
+  "stats": {
+    "suites": 4,
+    "tests": 3,
+    "passes": 3,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-23T11:05:01.557Z",
+    "end": "2023-11-23T11:05:04.370Z",
+    "duration": 2813,
+    "testsRegistered": 3,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "764bef78-193a-4bfa-b8c7-e293990ff074",
+      "title": "",
+      "fullFile": "C:\\PRATIK\\Priya\\AlmaBetter Project\\get-youtube-subscribers project\\_tests_\\test.js",
+      "file": "\\_tests_\\test.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "67112a64-6c91-4d38-a1b7-7a21126d3bf8",
+          "title": "API Routes",
+          "fullFile": "C:\\PRATIK\\Priya\\AlmaBetter Project\\get-youtube-subscribers project\\_tests_\\test.js",
+          "file": "\\_tests_\\test.js",
+          "beforeHooks": [
+            {
+              "title": "\"before all\" hook in \"API Routes\"",
+              "fullTitle": "API Routes \"before all\" hook in \"API Routes\"",
+              "timedOut": false,
+              "duration": 2616,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Connect to a test database or perform any setup you need\n// This will depend on your testing environment and strategy\nawait mongoose.connect('mongodb+srv://ashahnawaz010:WkrqkxVLaDvEZnE7@cluster0.dzgsqgw.mongodb.net/', {\n  useNewUrlParser: true,\n  useUnifiedTopology: true,\n});",
+              "err": {},
+              "uuid": "7efa55ef-6d80-4ade-bd87-63b186536c80",
+              "parentUUID": "67112a64-6c91-4d38-a1b7-7a21126d3bf8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "afterHooks": [
+            {
+              "title": "\"after all\" hook in \"API Routes\"",
+              "fullTitle": "API Routes \"after all\" hook in \"API Routes\"",
+              "timedOut": false,
+              "duration": 27,
+              "state": null,
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "// Disconnect from the test database or perform any cleanup\nawait mongoose.disconnect();",
+              "err": {},
+              "uuid": "548d20e3-3347-4965-bde4-7467ac764573",
+              "parentUUID": "67112a64-6c91-4d38-a1b7-7a21126d3bf8",
+              "isHook": true,
+              "skipped": false
+            }
+          ],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "3932be54-ec33-4348-b91d-e68912bd7e89",
+              "title": "GET /subscribers",
+              "fullFile": "C:\\PRATIK\\Priya\\AlmaBetter Project\\get-youtube-subscribers project\\_tests_\\test.js",
+              "file": "\\_tests_\\test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get all subscribers",
+                  "fullTitle": "API Routes GET /subscribers should get all subscribers",
+                  "timedOut": false,
+                  "duration": 79,
+                  "state": "passed",
+                  "speed": "slow",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .get(\"/subscribers\")\n  .end((err, res) => {\n    res.should.have.status(200);\n    res.body.should.be.a(\"array\");\n    //res.body.length.should.be.eql(0); // Assuming no subscribers initially\n    done();\n  });",
+                  "err": {},
+                  "uuid": "3bcd601e-9bca-4b5f-8fdd-d429bfa5939f",
+                  "parentUUID": "3932be54-ec33-4348-b91d-e68912bd7e89",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "3bcd601e-9bca-4b5f-8fdd-d429bfa5939f"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 79,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            },
+            {
+              "uuid": "a12eb252-00c8-4bf9-b2ca-983e68e4efc3",
+              "title": "GET /subscribers/names",
+              "fullFile": "C:\\PRATIK\\Priya\\AlmaBetter Project\\get-youtube-subscribers project\\_tests_\\test.js",
+              "file": "\\_tests_\\test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get subscribers by name and subscribedChannel",
+                  "fullTitle": "API Routes GET /subscribers/names should get subscribers by name and subscribedChannel",
+                  "timedOut": false,
+                  "duration": 27,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "chai.request(app)\n  .get(\"/subscribers/names\")\n  .end((err, res) => {\n    res.should.have.status(200);\n    res.body.should.be.a(\"array\");\n    // Add more assertions based on your expected response\n    done();\n  });",
+                  "err": {},
+                  "uuid": "1f123875-d507-41fb-8d2c-ff8bb622633b",
+                  "parentUUID": "a12eb252-00c8-4bf9-b2ca-983e68e4efc3",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "1f123875-d507-41fb-8d2c-ff8bb622633b"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 27,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            },
+            {
+              "uuid": "c31d4d68-9821-44fd-b37f-26cc6eb4f34b",
+              "title": "GET /subscribers/:id",
+              "fullFile": "C:\\PRATIK\\Priya\\AlmaBetter Project\\get-youtube-subscribers project\\_tests_\\test.js",
+              "file": "\\_tests_\\test.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "should get subscriber information by ID",
+                  "fullTitle": "API Routes GET /subscribers/:id should get subscriber information by ID",
+                  "timedOut": false,
+                  "duration": 39,
+                  "state": "passed",
+                  "speed": "medium",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "// Fetch a subscriber document from the collection\nconst subscriber = await Subscriber.findOne();\n// Make sure a subscriber document was found\nif (!subscriber) {\n  throw new Error('No subscriber documents found in the collection.');\n}\n// Get the _id from the fetched subscriber document\nconst subscriberId = subscriber._id.toString();\n// Making the actual request using chai-http\nconst response = await chai.request(app).get(`/subscribers/${subscriberId}`);\n\n// Assertions\nexpect(response).to.have.status(200);\nexpect(response.body).to.have.property('_id', subscriberId);\n// Add more assertions as needed",
+                  "err": {},
+                  "uuid": "cfaeee36-c3b3-4a35-ab87-c06d33032bba",
+                  "parentUUID": "c31d4d68-9821-44fd-b37f-26cc6eb4f34b",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "cfaeee36-c3b3-4a35-ab87-c06d33032bba"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 39,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 60000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 60000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 60000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
