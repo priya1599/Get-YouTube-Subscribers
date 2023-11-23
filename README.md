@@ -1,20 +1,27 @@
-# Get-YouTube-Subscribers
+- Get-YouTube-Subscribers
 
-
+This is an Almabetter's backend capstone project on Get-Youtube-Subscribers using ExpressJs, MongoDb, and NodeJs. This project involves developing a backend system for managing YouTube subscribers. We've designed a backend API that delivers responses in JSON format. 
 
 ## Table of Contents
 
 - [Introduction ](#introduction)
+- [API Reference ](#api-reference)
 - [Features ](#features)
 - [Tech Stack ](#tech-stack)
 - [Prerequisites ](#prerequisites)
 - [Installation & Run](#installation-and-run)
-- [API Reference ](#api-reference)
+  
 
 
 ## Introduction
 Get YouTube Subscribers is an Application that serves as a RESTful API created by using MongoDB in Node.js. It is designed to fetch all subscribers information related to YouTube channel subscribers. The primary technologies used to develop this application are Node.js and Express.js which are used to create API endpoints and manage HTTP requests. Additionally, this application utilizes MongoDB as the database to store and manage subscribers data efficiently.
 
+## API Reference
+The following API endpoints are for retrieving subscribers information using the GET method. 
+
+- `/subscribers`: Retrieve a list of all subscribers with their ID, name, subscribed channel, and date.
+- `/subscribers/names`: Obtain subscribers name along with the channel they are subscribed to.
+- `/subscribers/id`: Access subscribers information based on their ID.
 
 
 ## Features
@@ -72,12 +79,6 @@ To run this project locally, make sure you have the following installed:
     > Access the  application in your web browser at `http://localhost:3000` (base URL)
 
 
-## API Reference
-The following API endpoints are for retrieving subscribers information using the GET method. 
-
-- `/subscribers`: Retrieve a list of all subscribers with their ID, name, subscribed channel, and date.
-- `/subscribers/names`: Obtain subscribers name along with the channel they are subscribed to.
-- `/subscribers/id`: Access subscribers information based on their ID.
 
 
 
