@@ -42,11 +42,11 @@ To run this project locally, make sure you have the following installed:
 ## Installation and Run
 1. Clone the repository from GitHub:
     ```
-     git clone https://github.com/Abhi1o/GET-YOUTUBE-SUBSCRIBERS
+     git clone https://github.com/priya1599/Get-YouTube-Subscribers
     ```
 2. Redirect to the project folder:
     ```
-     cd GET-YOUTUBE-SUBSCRIBERS
+     cd Get-YouTube-Subscribers
     ```
 3. Install the required dependencies:
     ```
@@ -73,7 +73,7 @@ To run this project locally, make sure you have the following installed:
 
 
 ## API Reference
-Following API endpoints for retrieving subscribers information using the GET method. For more refer to the [API-Documentation](./API-Documentation.md).
+The following API endpoints are for retrieving subscribers information using the GET method. 
 
 - `/subscribers`: Retrieve a list of all subscribers with their ID, name, subscribed channel, and date.
 - `/subscribers/names`: Obtain subscribers name along with the channel they are subscribed to.
