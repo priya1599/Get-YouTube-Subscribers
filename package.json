@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "mocha 'tests/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
-    
+    "createDB": "node src/createDatabase.js"
   
     
   },
