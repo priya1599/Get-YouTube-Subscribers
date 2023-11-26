@@ -71,37 +71,4 @@ describe("API Routes", () => {
       // Add more assertions as needed
     });
   });
-
-
-
-  // describe("GET /subscribers/:id", () => {
-  //   it("should get a subscriber by id", (done) => {
-  //     const newSubscriber = new Subscriber({
-  //       name: "John Doe",
-  //       subscribedChannel: "Example Channel",
-  //     });
-
-  //     newSubscriber.save((err, subscriber) => {
-  //       chai.request(app)
-  //         .get(`/subscribers/${subscriber.id}`)
-  //         .end((err, res) => {
-  //           res.should.have.status(200);
-  //           res.body.should.be.a("object");
-  //           res.body.should.have.property("name").eql("John Doe");
-  //           // Add more assertions based on your expected response
-  //           done();
-  //         });
-  //     });
-  //   });
-
-  //   it("should return an error if subscriber is not found", (done) => {
-  //     chai.request(app)
-  //       .get("/subscribers/invalid_id")
-  //       .end((err, res) => {
-  //         res.should.have.status(400);
-  //         res.body.should.have.property("message").eql("subscriber not found");
-  //         done();
-  //       });
-  //   });
-  // });
 });
