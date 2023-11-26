@@ -4,7 +4,9 @@
   "description": "RESTful API to get YouTube subscribers information.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha 'tests/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit"
+    "test": "mocha 'tests/*.js' --reporter mochawesome --recursive  --timeout 60000 --exit",
+    "start": "node src/index.js",
+    "createDB": "node src/createDatabase.js"
     
   },
 
