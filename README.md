@@ -81,7 +81,7 @@ To run this project locally, make sure you have the following installed:
 
 
 ## API Schema Documentation
-[#](https://documenter.getpostman.com/view/30567986/2s9YeD9Ym5)
+# [https://documenter.getpostman.com/view/30567986/2s9YeD9Ym5]
 
 
 
