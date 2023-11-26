@@ -12,7 +12,7 @@ describe("API Routes", () => {
   before(async () => {
     // Connect to a test database or perform any setup you need
     // This will depend on your testing environment and strategy
-    await mongoose.connect('mongodb://127.0.0.1:27017/', {
+    await mongoose.connect('mongodb+srv://priyadeshmukh15pd:K7qmZl1W3ljmlrgh@cluster0.ffbiu6a.mongodb.net/', {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
